@@ -2,12 +2,20 @@
 The objective of this assessment is to analyze the provided Electric Vehicle (EV) population data and create a frontend dashboard that visualizes key insights about the dataset. This repository contains the necessary data and instructions for you to demonstrate your analytical and dashboard creation skills.
 
 Prior to the frontend assignment, Exploratory Data Analysis (EDA) was conducted on the dataset to clean, understand, and extract meaningful insights. These findings have guided the design and structure of the dashboard.
-
-**Dataset**
-The Electric Vehicle Population dataset is available in the Electric Vehicle Population Data (CSV) within this repository. For more information about the dataset, visit the Kaggle dataset page.
+Frontend: React, Material-UI, React Router
+EDTA : Numpy, Pandas, Seaborn, matplotlib
+Charting: Nivo, D3.js, Seaborn (for inspiration from the Python code)
+CSV Data Handling: Papa Parse
+Styling: CSS-in-JS via Material-UI’s sx prop
+Routing: React Router DOM
+Build Tool: Webpack, Babel (handled by Create React App)
+**Features** : 
+Sidebar Navigation: The sidebar allows easy navigation between different pages like the Bar Chart, Line Chart, and Table.
+Interactive Charts: The dashboard includes interactive charts that display EV data, such as the top 10 car makes by the number of vehicles.
+Data Table: The table provides detailed views of the top 10 car makes, and the user can click on a specific car make to view its models and trends.
 
 **Dataset Highlights:**
-Number of Entries: 50,000
+Number of Entries: 50,000 rows x 17 columns
 Key Features:
 Electric Vehicle Type (e.g., Battery Electric Vehicle, Plug-In Hybrid)
 Make and Model
@@ -28,13 +36,7 @@ Key Insights:
 Most common electric vehicle type: Battery Electric Vehicle (BEV) (39,461 out of 50,000 entries).
 Top counties and cities by EV adoption (e.g., Yakima County leads with Yakima City having the highest EV population).
 Trends in electric vehicle affordability based on MSRP and eligibility for CAFV incentives.
-Dashboard Features
-The dashboard was designed to effectively communicate the insights derived from the dataset. It includes:
 
-Visualizations:
-Bar Charts: Highlight top electric vehicle makes and models.
-Line Charts: Showcase the growth trend in EV adoption over the years.
-Tables: Present detailed data, including ranks and counts of EVs by make and city.
 User Interaction:
 A Download Dataset button allows users to access the dataset directly.
 An FAQ Section provides answers to common questions about EV data and trends.
