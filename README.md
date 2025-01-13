@@ -1,12 +1,12 @@
-Overview
+##**Overview**
 The objective of this assessment is to analyze the provided Electric Vehicle (EV) population data and create a frontend dashboard that visualizes key insights about the dataset. This repository contains the necessary data and instructions for you to demonstrate your analytical and dashboard creation skills.
 
 Prior to the frontend assignment, Exploratory Data Analysis (EDA) was conducted on the dataset to clean, understand, and extract meaningful insights. These findings have guided the design and structure of the dashboard.
 
-Dataset
+**Dataset**
 The Electric Vehicle Population dataset is available in the Electric Vehicle Population Data (CSV) within this repository. For more information about the dataset, visit the Kaggle dataset page.
 
-Dataset Highlights:
+**Dataset Highlights:**
 Number of Entries: 50,000
 Key Features:
 Electric Vehicle Type (e.g., Battery Electric Vehicle, Plug-In Hybrid)
@@ -21,8 +21,6 @@ Note: The dataset has been reduced in size to ensure optimal performance in a fr
 Exploratory Data Analysis (EDA)
 Before building the frontend dashboard, the following steps were performed as part of EDA:
 
-Data Cleaning:
-Removed duplicate entries.
 Validated data types and handled null values.
 Descriptive Statistics:
 Summarized key metrics like the distribution of electric vehicle types, model years, and electric ranges.
