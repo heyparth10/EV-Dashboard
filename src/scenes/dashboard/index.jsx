@@ -2,7 +2,7 @@ import { Box, Button, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import Header from "../../components/Header";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
-
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -34,7 +34,6 @@ const Dashboard = () => {
         </Button>
       </Box>
 
-      {/* OVERVIEW SECTION */}
       <Box mt="20px">
         <Typography variant="h5" fontWeight="bold" color={colors.greenAccent[400]}>
           Overview
@@ -46,31 +45,30 @@ const Dashboard = () => {
         </Typography>
       </Box>
 
-      {/* VISUALIZATION SECTION */}
       <Box mt="30px" display="grid" gridTemplateColumns="repeat(12, 1fr)" gap="20px">
-        {/* Bar Chart: Top 10 Car Makes */}
-        <Box gridColumn="span 12" backgroundColor={colors.primary[400]} p="20px" borderRadius="8px">
+      <Box gridColumn="span 12" backgroundColor={colors.primary[400]} p="20px" borderRadius="8px">
+        <Link to="/bar" style={{ textDecoration: "none" }}>
           <Typography variant="h6" fontWeight="bold" color={colors.grey[100]} mb="10px">
             Top 10 Car Makes by Number of Vehicles
           </Typography>
-          {/* <BarChart /> */}
-        </Box>
+        </Link>
+      </Box>
 
-        {/* Line Chart: Yearly Trends */}
-        <Box gridColumn="span 12" backgroundColor={colors.primary[400]} p="20px" borderRadius="8px" mt="20px">
+      <Box gridColumn="span 12" backgroundColor={colors.primary[400]} p="20px" borderRadius="8px" mt="20px">
+        <Link to="/line" style={{ textDecoration: "none" }}>
           <Typography variant="h6" fontWeight="bold" color={colors.grey[100]} mb="10px">
             EV Trends Over the Years
           </Typography>
-          {/* <LineChart /> */}
-        </Box>
+        </Link>
+      </Box>
 
-        {/* Table: Detailed View */}
-        <Box gridColumn="span 12" backgroundColor={colors.primary[400]} p="20px" borderRadius="8px" mt="20px">
+      <Box gridColumn="span 12" backgroundColor={colors.primary[400]} p="20px" borderRadius="8px" mt="20px">
+        <Link to="/table" style={{ textDecoration: "none" }}>
           <Typography variant="h6" fontWeight="bold" color={colors.grey[100]} mb="10px">
             Detailed View: Top 10 Car Makes
           </Typography>
-          {/* <Table /> */}
-        </Box>
+        </Link>
+      </Box>
       </Box>
     </Box>
   );
